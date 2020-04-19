@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<!-- 代码输出目录 -->
+	<entry key="outRoot">d:/generator</entry>
+    <entry key="namespace">jsp</entry>
+	<!-- 代码基础包 -->
+    <entry key="basepackage">com.syr.module</entry>
+	<!-- 需要移除的表名前缀,使用逗号进行分隔多个前缀,示例值: t_,v_ -->
+	<entry key="tableRemovePrefixes">yx_</entry>
+
+	<!-- 数据库类型至java类型映射  -->
+	<entry key="java_typemapping.java.sql.Timestamp">java.util.Date</entry>
+	<entry key="java_typemapping.java.sql.Date">java.util.Date</entry>
+	<entry key="java_typemapping.java.sql.Time">java.util.Date</entry>
+	<entry key="java_typemapping.java.lang.Byte">Integer</entry>
+	<entry key="java_typemapping.java.lang.Short">Integer</entry>
+	<entry key="java_typemapping.java.math.BigDecimal">BigDecimal</entry>
+	<entry key="java_typemapping.java.sql.Clob">String</entry>
+
+	<!-- Mysql -->
+	<entry key="jdbc_url">jdbc:mysql://localhost:3306/gmall?useUnicode=true&amp;characterEncoding=UTF-8&amp;useInformationSchema=true</entry>
+	<entry key="jdbc_driver">com.mysql.jdbc.Driver</entry>
+
+	<!-- Oracle -->
+	<!--
+	<entry key="jdbc_schema">MY_GENERATOR</entry>
+	<entry key="jdbc_catalog"></entry>
+	<entry key="jdbc_url">jdbc:oracle:thin:@localhost:1521:my_generator_db</entry>
+	<entry key="jdbc_driver">oracle.jdbc.driver.OracleDriver</entry>
+	-->
+
+	<!-- 数据库用户名、密码 -->
+	<entry key="jdbc_username">root</entry>
+	<entry key="jdbc_password">137279</entry>
+</properties>

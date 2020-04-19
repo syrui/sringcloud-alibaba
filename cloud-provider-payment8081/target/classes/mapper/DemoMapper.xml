@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.syr.module.demo.mapper.DemoMapper">
+
+    <select id="byId" resultType="com.syr.module.demo.entity.Demo" parameterType="long">
+        select  * from demo where id=#{id}
+    </select>
+
+</mapper>
